@@ -20,6 +20,20 @@ _$_ python3 manage.py startapp polls
 #### create tables in the database 
 _$_ python3 manage.py migrate
 
+#### create models
+#### run migration
+_$_ python3 manage.py makemigrations polls
+
+#### check out what SQL the migration would run
+_$_ python3 manage.py sqlmigrate polls 0001
+
+#### run migrate to create model tables in the database
+_$_ python3 manage.py migrate
+
+remember the three-step guide to making model changes:
+1. change your models (in models.py)
+2. run 'python3 manage.py makemigrations' to create migrations for those changes
+3. run 'python3 manage.py migrate' to apply those changes to the database
 
 ### reference:
 
