@@ -1,7 +1,7 @@
 # django-poll
 learning a bit of django. following along with the getting started demo...
 
-#### create a project
+### create a project
 _$_ django-admin startproject mysite
 
 _$_ cd mysite
@@ -10,11 +10,16 @@ _$_ cd mysite
 _$_ python3 manage.py runserver
 
 #### create the polls _app_ inside the mysite _project_
-_$_ python manage.py startapp polls
+_$_ python3 manage.py startapp polls
 
 #### add a view
 #### create a urls.py file inside /polls
 #### point the root URLconf at the polls.urls module
+
+### database setup
+#### create tables in the database 
+_$_ python3 manage.py migrate
+
 
 ### reference:
 
