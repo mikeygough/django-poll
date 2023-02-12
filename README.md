@@ -35,6 +35,14 @@ remember the three-step guide to making model changes:
 2. run 'python3 manage.py makemigrations' to create migrations for those changes
 3. run 'python3 manage.py migrate' to apply those changes to the database
 
+### create an admin user
+_$_ python3 manage.py createsuperuser
+admin, admin@example.com, admin
+
+### views
+each view is responsible for doing one of two things: returning an HttpResponse object containing
+the content for the requested page, or raising an exception such as Http404.
+
 ### reference:
 
 #### virtual environments
